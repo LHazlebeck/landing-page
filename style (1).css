@@ -1,3 +1,8 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  } 
+
 body {
     display: flex;
     flex-direction: column;
@@ -6,10 +11,29 @@ body {
 
 a {
     text-decoration: none;
+    color: #E5E7EB;
 }
 
 button {
     background-color: #3882f6;
+    cursor:pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 800;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.links{
+    display: flex;
+    gap: 8px;
 }
 
 .subtext {
@@ -17,22 +41,44 @@ button {
     font-size: 18px;
 }
 
-.section1,
-.footer {
-    background-color: #1F2937;
-}
-
 .section1{
+    background-color: #d23b23;
     display: flex;
     flex: 1;
+    flex-grow: 1.5;
     flex-direction: column;
+    justify-content: space-between;
+    padding:2%;
 }
 
 .subsection{
     display: flex;
     flex:1;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin:64px;
+}
+
+.section2{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 .section3 {
     background-color: #E5E7EB;
+    display: flex;
+    flex: 1;
+}
+
+.section4 {
+    display: flex;
+    flex: 1;
+}
+
+.footer{
+    background-color: #1F2937;
+    display: flex;
+    flex: 0.1;
 }
